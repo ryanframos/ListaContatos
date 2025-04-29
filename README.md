@@ -19,4 +19,3 @@ Este é um projeto ASP.NET Core MVC para controle de contatos. Com ele, você po
 ## 📦 Requisitos
 
 - [.NET SDK](https://dotnet.microsoft.com/download) (versão 6.0 ou superior)
-- Git instalado na máquina
