@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Class.Models.ContatoModel>  
+
+<h2>Lista de Contatos</h2>
+
+<!-- Verifique se o Model é nulo ou vazio -->
+@if (Model == null || !Model.Any())
+{
+    <p>Nenhum contato encontrado.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var contato in Model)
+            {
+                <tr>
+                    <td>@contato.Nome</td>
+                    <td>@contato.Email</td>
+                    <td>@contato.Telefone</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-primary" asp-controller="Contato" asp-action="Criar">Adicionar Novo Contato</a>
+}
