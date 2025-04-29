@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Class.Models;
-using Microsoft.Extensions.Configuration; // Adicione este namespace
+using Microsoft.Extensions.Configuration;
 
 namespace Class.Data
 {
